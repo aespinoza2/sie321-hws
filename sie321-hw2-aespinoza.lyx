@@ -146,42 +146,87 @@ x = # of successes, n = # of trials, p = success rate
 \begin_layout Standard
 Out of seven consecutive fair coin tosses, the possible outcomes of getting
  more heads than tails are 4 heads, 5 heads, 6 heads, and 7 heads.
- Therefore, A = 4.
+ 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $P(A)=P(4)=\left(\begin{array}{c}
+A = {(4H, 3T), (5H, 2T), (6H, 1T), (7H, 0T)}
+\end_layout
+
+\begin_layout Standard
+B = {(4H, 3T), (5H, 2T), (6H, 1T), (7H, 0T)}
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(A)=P(4H,3T)+P(5H,2T)+P(6H,1T)+P(7H,0T)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(A)=\left(\begin{array}{c}
 7\\
 4
-\end{array}\right)(0.5)^{4}(0.5)^{3}$
+\end{array}\right)(0.5)^{7}+\left(\begin{array}{c}
+7\\
+5
+\end{array}\right)(0.5)^{7}+\left(\begin{array}{c}
+7\\
+6
+\end{array}\right)(0.5)^{7}+\left(\begin{array}{c}
+7\\
+7
+\end{array}\right)(0.5)^{7}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $P(A)=0.273$
+\begin_inset Formula $P(A)=(\frac{1}{2})^{7}(35+21+7+1)$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $P(A)=27.3\%$
+\begin_inset Formula $P(A)=\frac{64}{128}=\frac{1}{2}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $P(B)=?$
+\begin_inset Formula $P(B)=1-P(A)$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $P(A|B)=?$
+\begin_inset Formula $P(B)=1-\frac{1}{2}=\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(A\cap B)=\frac{1}{2}*\frac{1}{2}=\frac{1}{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(A|B)=\frac{\frac{1}{4}}{\frac{1}{4}}=\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(A|B)=\frac{1}{2}$
 \end_inset
 
 
