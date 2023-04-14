@@ -1,0 +1,689 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+Agustin Espinoza
+\end_layout
+
+\begin_layout Standard
+SIE 321 Probabilistic Models in OR
+\end_layout
+
+\begin_layout Standard
+Homework 2
+\end_layout
+
+\begin_layout Standard
+4 January 2023
+\end_layout
+
+\begin_layout Enumerate
+A fair coin is tossed consecutively 7 times.
+ Find the conditional probability P(A | B), where the events A and B are
+ defined as 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+A = {more heads than tails came up}, B = {5th toss is a head}
+\end_layout
+
+\begin_layout Standard
+Bernoulli Trials:
+\end_layout
+
+\begin_layout Standard
+- Success and failure
+\end_layout
+
+\begin_layout Standard
+- Independennt events
+\end_layout
+
+\begin_layout Standard
+- Constant success rat
+\end_layout
+
+\begin_layout Standard
+Binomial Distribution: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(x)=\left(\begin{array}{c}
+n\\
+x
+\end{array}\right)p^{x}(1-p)^{n-x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+x = # of successes, n = # of trials, p = success rate
+\end_layout
+
+\begin_layout Standard
+Out of seven consecutive fair coin tosses, the possible outcomes of getting
+ more heads than tails are 4 heads, 5 heads, 6 heads, and 7 heads.
+ 
+\end_layout
+
+\begin_layout Standard
+A = {(4H, 3T), (5H, 2T), (6H, 1T), (7H, 0T)}
+\end_layout
+
+\begin_layout Standard
+B = {(4H, 3T), (5H, 2T), (6H, 1T), (7H, 0T)}
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(A)=P(4H,3T)+P(5H,2T)+P(6H,1T)+P(7H,0T)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(A)=\left(\begin{array}{c}
+7\\
+4
+\end{array}\right)(0.5)^{7}+\left(\begin{array}{c}
+7\\
+5
+\end{array}\right)(0.5)^{7}+\left(\begin{array}{c}
+7\\
+6
+\end{array}\right)(0.5)^{7}+\left(\begin{array}{c}
+7\\
+7
+\end{array}\right)(0.5)^{7}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(A)=\frac{1}{2}^{7}(35+21+7+1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(A)=\frac{64}{128}=\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(B)=1-P(A)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(B)=1-\frac{1}{2}=\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(A\cap B)=\frac{1}{2}*\frac{1}{2}=\frac{1}{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(A|B)=\frac{\frac{1}{4}}{\frac{1}{4}}=\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(A|B)=\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Consider rolling a pair of dice once.
+ What is the probability of getting 8, given that the sum of the faces is
+ an even number?d
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+A = {values of both faces add up to 8}, B = {sum of both faces is an even
+ number}
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(A=8)=\frac{5}{36}=0.139$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(B)=\frac{18}{36}=0.5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(A|B)=\frac{P(A\cap B)}{P(B)}=\frac{P(A)}{P(B)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(A|B)=\frac{0.139}{0.5}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(A|B)=0.278=27.8\%$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+A box contains four tickets labeled 112, 121, 211, and 222.
+ Choose one ticket at random and consider events 
+\begin_inset Formula $A_{i}$
+\end_inset
+
+= {1 occurs in i-th position}, i = 1, 2, 3.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Are events 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+, and 
+\begin_inset Formula $A_{3}$
+\end_inset
+
+ pairwise independent?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Pairwise Independece:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(A\cap B)=P(A)P(B)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(A_{1})=\frac{2}{4}=\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(A_{2})=\frac{2}{4}=\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(A_{3})=\frac{2}{4}=\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(A_{1}\cap A_{2})=\frac{1}{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(A_{1})P(A_{2})=\frac{1}{2}*\frac{1}{2}=\frac{1}{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{1}{4}=\frac{1}{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(A_{2}\cap A_{3})=\frac{1}{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(A_{2})P(A_{3})=\frac{1}{2}*\frac{1}{2}=\frac{1}{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{1}{4}=\frac{1}{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(A_{1}\cap A_{3})=\frac{1}{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(A_{1})P(A_{3})=\frac{1}{2}*\frac{1}{2}=\frac{1}{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{1}{4}=\frac{1}{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\therefore$
+\end_inset
+
+ Events 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+, and 
+\begin_inset Formula $A_{3}$
+\end_inset
+
+ are pairwise independent
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Are they mutually independent?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Mutual Independence:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(A\cap B\cap C)=P(A)P(B)P(C)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(A_{1}\cap A_{2}\cap A_{3})=P(A_{1})P(A_{2})P(A_{3})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(A_{1}\cap A_{2}\cap A_{3})=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(A_{1})P(A_{2})P(A_{3})=\frac{1}{2}*\frac{1}{2}*\frac{1}{2}=\frac{1}{8}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $0\neq\frac{1}{8}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\therefore$
+\end_inset
+
+ Events 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+, and 
+\begin_inset Formula $A_{3}$
+\end_inset
+
+ are NOT mutually independent
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+You enter a chess tournament where your probability of winning a game is
+ 0.42 against 30% the players (call them type 1), 0.33 against other 10% of
+ the players (call them type 2), and 0.25 against the remaining 60% players
+ (call them type 3).
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+You play a game against a randomly chosen opponent.
+ What is the probability of winning?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+type 1 = 0.3, type 2 = 0.1, type 3 = 0.6
+\end_layout
+
+\begin_layout Standard
+Law of Total Probability:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(B)=\sum_{i=1}^{n}P(B|A_{i})P(A_{i})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(win|type1)=0.42$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(win|type2)=0.33$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(win|type3)=0.25$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(win)=P(win|type1)P(type1)+P(win|type2)P(type2)+P(win|type3)P(type3)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(win)=0.42(0.3)+0.33(0.1)+0.25(0.6)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(win)=0.309$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Suppose that you were the winner of a game.
+ What is the probability that your opponent was of type 3?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Bayes' Rule (Reverse of the Law of Total Probability):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(A_{k}|B)=\frac{P(B|A_{k})P(A_{k}}{P(B)})=\frac{P(B|A_{k})P(A_{k})}{\sum_{i=1}^{n}P(B|A_{i})P(A_{i})}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(type3|win)=\frac{P(win|type3)P(type3)}{P(win)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(type3|win)=\frac{0.25(0.6)}{0.309}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(type3|win)=0.485=48.5\%$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+A customer has approached a bank for a loan.
+ Without further information, the bank believes there is a 4% chance that
+ the customer will default on the loan.
+ The bank can run a credit check on the customer.
+ The check will yield either a favorable or an unfavorable report.
+ From past experience, the bank believes that
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+P(favorable report being received | customer will default) = 
+\begin_inset Formula $\frac{4}{40}$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+and
+\end_layout
+
+\begin_layout Standard
+\align center
+P(favorable report | customer will not default) = 
+\begin_inset Formula $\frac{96}{100}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+If a favorable report is received, what is the probability that the customer
+ will default on the loan?
+\end_layout
+
+\begin_layout Standard
+P(default) = 0.04
+\end_layout
+
+\begin_layout Standard
+P(no default) = 0.96
+\end_layout
+
+\begin_layout Standard
+Bayes' Rule (Reverse of the Law of Total Probability):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(A_{k}|B)=\frac{P(B|A_{k})P(A_{k}}{P(B)})=\frac{P(B|A_{k})P(A_{k})}{\sum_{i=1}^{n}P(B|A_{i})P(A_{i})}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+P(default | favorable report) = 
+\begin_inset Formula $\frac{P(favorable\,report|default)P(default)}{P(favorable\,report|default)P(default)+P(favorable\,report|no\,default)P(no\,default)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+P(default | favorable report) = 
+\begin_inset Formula $\frac{\frac{4}{40}(0.04)}{\frac{4}{40}(0.04)+\frac{96}{100}(0.96)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+P(default | favorable report) = 
+\begin_inset Formula $\frac{0.004}{0.004+0.9216}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+P(default | favorable report) = 0.0043 = 0.43 %
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
